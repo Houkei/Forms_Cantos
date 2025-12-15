@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+
+<body style="
+    font-family: Arial, sans-serif;
+    background-color: #edffeb;
+    margin: 0;
+    padding: 0;">
+
+<header style="
+    background-color: #00604b;
+    color: white;
+    text-align: center;
+    padding: 15px;">
+
+    <h1>User Registration</h1>
+</header>
+
+<main style="
+    max-width: 500px;
+    background-color: rgb(255, 255, 255);
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+
+    <form>
+        <label for="fullname"
+            style="display: block;
+            font-weight: bold;">
+            Full Name
+        </label>
+        <input type="text" 
+            id="fullname" 
+            name="fullname" 
+            required 
+            minlength="3" 
+            placeholder="Minimum of 3 characters."
+            style="width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid #ccc;">
+
+        <label for="email"
+            style="display: block;
+            margin-top: 25px;
+            font-weight: bold;">
+            Email Address
+        </label>
+        <input type="email" 
+            id="email" 
+            name="email" 
+            required
+            style="width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid #ccc;">
+
+        <label for="password"
+            style="display: block;
+            margin-top: 25px;
+            font-weight: bold;">
+            Password
+        </label>
+        <input type="password" 
+            id="password" 
+            name="password"
+            required minlength="8"
+            pattern="^(?=.*[0-9])(?=.*[\W_]).{8,}$"
+            placeholder="Min. of 8 characters, 1 number, and 1 special character."
+            style="width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid #ccc;">
+
+        <label for="confirm"
+            style="display: block;
+            margin-top: 25px;
+            font-weight: bold;">
+            Confirm Password
+        </label>
+        <input type="password" 
+            id="confirm" 
+            name="confirm" 
+            required
+            style="width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid #ccc;">
+
+        <label
+            style="display: block;
+            margin-top: 25px;
+            font-weight: bold;">
+            Gender
+        </label>
+        <div class="gender">
+            <input type="radio" name="gender" required style="width: auto;"> Male
+            <input type="radio" name="gender" required style="width: auto;"> Female
+            <input type="radio" name="gender" required style="width: auto;"> Other
+        </div>
+
+        <label for="bday"
+            style="display: block;
+            margin-top: 25px;
+            font-weight: bold;">
+            Date of Birth
+        </label>
+        <input type="date" 
+            id="bday" 
+            name="bday" 
+            required 
+            max="2007-12-16"
+            style="width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid #ccc;">
+
+        <label for="country"
+            style="display: block;
+            margin-top: 25px;
+            font-weight: bold;">
+            Country
+        </label>
+        <select 
+            id="country" 
+            name="country" 
+            required
+            style="width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid #ccc;">
+                <option value="">Select Country</option>
+                <option>Philippines</option>
+                <option>China</option>
+                <option>Japan</option>
+                <option>Australia</option>
+                <option>Canada</option>
+                <option>France</option>
+        </select>
+
+        <div class="terms">
+            <input type="checkbox" 
+                required
+                style="width: auto;
+                margin-top: 5px;
+                border: 1px solid #ccc;">
+                I agree to the 
+            <a href="terms.html" target="_blank">Terms & Conditions</a>
+        </div>
+
+        <button type="submit" style="
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #146519;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 20px;
+            cursor: pointer;">
+            Register
+        </button>
+    </form>
+</main>
+
+<footer style="
+    background-color: #00604b;
+    color: white;
+    text-align: center;
+    padding: 15px;">
+
+    <p>© 2025 Registration System</p>
+</footer>
+</body>
+</html>
